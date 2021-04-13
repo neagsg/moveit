@@ -1,5 +1,7 @@
 import { createContext, ReactNode, useEffect, useState } from 'react';
 import Cookies from 'js-cookie';
+import { useSession } from 'next-auth/client'
+
 
 import challenges from '../../challenges.json';
 import LevelUpModal from '../components/LevelUpModal';
@@ -40,6 +42,7 @@ export function ChallengeProvider({ children, ...rest }: ChallengesProviderProps
   const [challengesCompleted, setChallengesCompleted] = useState(rest.challengesCompleted ?? 0);
   const [activeChallenge, setActiveChallenge] = useState(null);
   const [isLevelUpModalOpen, setIsLevelupModalOpen] = useState(false)
+  const [ session, loading ] = useSession()
 
   const experienceToNextLevel = Math.pow((level + 1) * 4, 2)
 
@@ -100,6 +103,8 @@ export function ChallengeProvider({ children, ...rest }: ChallengesProviderProps
     setChallengesCompleted(challengesCompleted + 1);
   }
 
+  if (typeof window !== 'undefined' && loading) return null
+
   return (
     <ChallengeContext.Provider
       value={{
@@ -116,7 +121,7 @@ export function ChallengeProvider({ children, ...rest }: ChallengesProviderProps
       }}>
       {children}
 
-      <Login />
+      {!session && <Login /> }
 
       { isLevelUpModalOpen && <LevelUpModal /> }
     </ChallengeContext.Provider>

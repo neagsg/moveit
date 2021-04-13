@@ -1,3 +1,4 @@
+import { signIn } from 'next-auth/client'
 import { FaGithub, FaArrowRight } from 'react-icons/fa'
 
 import styles from '../styles/components/Login.module.css';
@@ -6,7 +7,7 @@ export default function Login() {
   return (
     <div className={styles.container}>
       <div className={styles.backgroundImg}>
-      </div>
+      </div>  
       <div className={styles.content}>
           <img src="/logo-login.svg" alt="Logo Escrito Move.it"/>
 
@@ -17,7 +18,7 @@ export default function Login() {
             para começar
           </p>
 
-          <button>
+          <button onClick={() => signIn()}>
             Entre com GitHub
             <p>
               <FaArrowRight size={32} color="#fff" />
