@@ -3,6 +3,7 @@ import Cookies from 'js-cookie';
 
 import challenges from '../../challenges.json';
 import LevelUpModal from '../components/LevelUpModal';
+import Login from '../components/Login';
 
 interface Challenge {
   type: 'body' | 'eye';
@@ -114,6 +115,8 @@ export function ChallengeProvider({ children, ...rest }: ChallengesProviderProps
         closeLevelUpModal
       }}>
       {children}
+
+      <Login />
 
       { isLevelUpModalOpen && <LevelUpModal /> }
     </ChallengeContext.Provider>
