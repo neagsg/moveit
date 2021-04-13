@@ -51,6 +51,7 @@
 .content button {
   color: #b2b9ff;
   font-size: 1.25rem;
+  border-radius: 4px;
   border: 0;
   /* outline: none; */
   height: 5rem;
@@ -65,6 +66,7 @@
 }
 
 .content button p {
+  border-radius: 4px;
   background: var(--blue-dark);
   height: 5rem;
   width: 5rem;
