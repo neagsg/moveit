@@ -18,3 +18,11 @@
 
   margin-top: 3.5rem;
 }
+
+@media (max-width: 1120px) {
+  .container section {  
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+}

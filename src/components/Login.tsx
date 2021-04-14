@@ -6,8 +6,7 @@ import styles from '../styles/components/Login.module.css';
 export default function Login() {
   return (
     <div className={styles.container}>
-      <div className={styles.backgroundImg}>
-      </div>  
+      <div className={styles.backgroundImg}></div>
       <div className={styles.content}>
           <img src="/logo-login.svg" alt="Logo Escrito Move.it"/>
 
