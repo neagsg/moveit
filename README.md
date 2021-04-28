@@ -10,7 +10,7 @@
 Move.it is an application based on the pomodoro technique that it consists of using a stopwatch to divide the work into 25-minute periods, separated by brief intervals.
 
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/38633178/116440378-d0c92980-a826-11eb-9744-6619acdc147f.gif"
+  <img src="https://user-images.githubusercontent.com/38633178/116442543-fc4d1380-a828-11eb-87b2-7a0952d69bf5.gif"
   alt="Move.it" />
 </p>
 
