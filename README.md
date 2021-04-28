@@ -9,6 +9,18 @@
 
 Move.it is an application based on the pomodoro technique that it consists of using a stopwatch to divide the work into 25-minute periods, separated by brief intervals.
 
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/38633178/116440378-d0c92980-a826-11eb-9744-6619acdc147f.gif"
+  alt="Move.it" />
+</p>
+
+## :sparkles: Deploy
+
+<p align="center">
+  <a href="https://moveit-manager.vercel.app">Move.it</a>
+</p>
+
+
 ## :rocket: Technology
 
 Technologies used to make this project
