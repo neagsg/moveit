@@ -3,7 +3,7 @@
   alt="Move.it" />
 </p>
 
-<p align="center">Gerencie seu tempo ⏲️</p>
+<p align="center">Manage your time ⏲️</p>
 
 ## :book: Overview
 
